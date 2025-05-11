@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rayan - Front-end Developer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="logo.png" alt=""></div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sec">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#reco">Recommendations</a></li>
+            <li><a href="#con">Contact</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Mobile Overlay Nav -->
+        <nav class="mobile-nav" id="mobileNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#sec">Skills</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#reco">Recommendations</a></li>
+            <li><a href="#con">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--Skills------------------------------>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>I’m Rayan Adlrdard<br><span>Front-end</span> Developer</h1>
+      <p>Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Et, Volutpat Feugiat Placerat Lobortis. Natoque Rutrum Semper Sed Suspendisse Nunc Lectus.</p>
+      <button onclick="alert('Thanks for your interest!')">HIRE ME →</button>
+    </div>
+    <div class="hero-img">
+      <img src="one.png" alt="Developer Illustration" />
+    </div>
+  </section>
+
+  <!--Add skill section-->
+  <section id="sec">                 
+  <h1 class="skill">Skills and Languages</h1>
+
+  <!-- Modal for Project Upload -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Upload Your Project</h2>
+      <form>
+        <label for="projectTitle">Project Title:</label>
+        <input type="text" id="projectTitle" name="projectTitle" required />
+
+        <label for="projectFile" class="projects-btn">Upload File:</label>
+        <input type="file" id="projectFile" name="projectFile" required />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- New Section for Skills -->
+  <section id="skillsSection">
+    <h2>My Skills</h2>
+    
+  <div id="skillsList">
+    <!-- New skills will appear here -->
+  </div>
+  <button id="addSkillBtn">Add Skill</button>
+  
+
+    <!--Add projects-->
+ 
+  </section>
+  <!--Add skill section-->
+</section> 
+
+  <!-- Projects Section 1 -->
+  <section id="project" class="projects">
+    <h2>Projects</h2>
+    <p>Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum</p>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="Project1.jpg" alt="Project 1">
+        <div class="card-content">
+          <h3>How To Make Flyer Design</h3>
+          <p>Lorem Ipsum Dolor Sit Amet, Consec Adipiscing Elit Awd And Lorem Ipsum...</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span>ReactJs</span>
+            <span>NextJs</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="card-content">
+          <h3>How To Make Flyer Design</h3>
+          <p>Lorem Ipsum Dolor Sit Amet, Consec Adipiscing Elit Awd And Lorem Ipsum...</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span>ReactJs</span>
+            <span>NextJs</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project3.jpg" alt="Project 3">
+        <div class="card-content">
+          <h3>How To Make Flyer Design</h3>
+          <p>Lorem Ipsum Dolor Sit Amet, Consec Adipiscing Elit Awd And Lorem Ipsum...</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span>ReactJs</span>
+            <span>NextJs</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section 2 -->
+
+  <section class="projects">
+    
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="project4.jpg" alt="Project 1">
+        <div class="card-content">
+          <h3>How To Make Flyer Design</h3>
+          <p>Lorem Ipsum Dolor Sit Amet, Consec Adipiscing Elit Awd And Lorem Ipsum...</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span>ReactJs</span>
+            <span>NextJs</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="Project1.jpg" alt="Project 2">
+        <div class="card-content">
+          <h3>How To Make Flyer Design</h3>
+          <p>Lorem Ipsum Dolor Sit Amet, Consec Adipiscing Elit Awd And Lorem Ipsum...</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span>ReactJs</span>
+            <span>NextJs</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="project5.jpg" alt="Project 3">
+        <div class="card-content">
+          <h3>How To Make Flyer Design</h3>
+          <p>Lorem Ipsum Dolor Sit Amet, Consec Adipiscing Elit Awd And Lorem Ipsum...</p>
+          <div class="tags">
+            <span>Typescript</span>
+            <span>ReactJs</span>
+            <span>NextJs</span>
+            <span>CSS</span>
+            <span>HTML</span>
+            <span>MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+
+  </div>
+  </section>
+
+  <section>
+    <div class="project-bottom-bar">
+      <div class="flex-container">
+        <h1>Upload your Projects :</h1>
+        <button id="hireMeBtn" class="projects-btn">Projects →</button>
+      </div>
+  </div>
+  </section>
+
+<!-- Recommendation - 
+ 
+
+
+dots-->
+<section id="reco"
+class="recommendations">
+    <h2>Recommendations</h2>
+    <p>
+      Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit.
+    </p>
+  
+    <div class="carousel-wrapper" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <!-- Card 1 -->
+        <div class="recommendation-card">
+          <div class="stars">★★★★★</div>
+          <h3>Great Quality!</h3>
+          <p>Lorem Ipsum Dolor Sit Amet...</p>
+          <div class="profile">
+            <img src="person1.jpg" alt="James Gouse" />
+            <div><strong>James Gouse</strong><br /><span>Graphic Designer</span></div>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="recommendation-card">
+          <div class="stars">★★★★★</div>
+          <h3>Amazing Work!</h3>
+          <p>Lorem Ipsum Dolor Sit Amet...</p>
+          <div class="profile">
+            <img src="person2.jpg" alt="Tiana Philips" />
+            <div><strong>Tiana Philips</strong><br /><span>Photographer</span></div>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="recommendation-card">
+          <div class="stars">★★★★★</div>
+          <h3>Top Notch!</h3>
+          <p>Lorem Ipsum Dolor Sit Amet...</p>
+          <div class="profile">
+            <img src="person3.jpg" alt="Talan Westervelt" />
+            <div><strong>Talan Westervelt</strong><br /><span>Business Man</span></div>
+          </div>
+        </div>
+  
+        <!-- Card 4 -->
+        <div class="recommendation-card">
+          <div class="stars">★★★★★</div>
+          <h3>Reliable!</h3>
+          <p>Lorem Ipsum Dolor Sit Amet...</p>
+          <div class="profile">
+            <img src="person1.jpg" alt="Client" />
+            <div><strong>Client</strong><br /><span>Freelancer</span></div>
+          </div>
+        </div>
+  
+        <!-- Card 5 -->
+        <div class="recommendation-card">
+          <div class="stars">★★★★★</div>
+          <h3>Professional!</h3>
+          <p>Lorem Ipsum Dolor Sit Amet...</p>
+          <div class="profile">
+            <img src="person2.jpg" alt="Client" />
+            <div><strong>Client</strong><br /><span>Web Developer</span></div>
+          </div>
+        </div>
+
+           <!-- Card 6 -->
+           <div class="recommendation-card">
+            <div class="stars">★★★★★</div>
+            <h3>Professional!</h3>
+            <p>Lorem Ipsum Dolor Sit Amet...</p>
+            <div class="profile">
+              <img src="person3.jpg" alt="Client" />
+              <div><strong>Client</strong><br /><span>Web Developer</span></div>
+            </div>
+          </div>
+
+             <!-- Card 7 -->
+        <div class="recommendation-card">
+            <div class="stars">★★★★★</div>
+            <h3>Professional!</h3>
+            <p>Lorem Ipsum Dolor Sit Amet...</p>
+            <div class="profile">
+              <img src="person1.jpg" alt="Client" />
+              <div><strong>Client</strong><br /><span>Web Developer</span></div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+  
+    <div class="carousel-dots" id="dots"></div>
+  </section>
+  
+  
+<!-- Contacts-->
+<section id="con"
+class="contact-section">
+    <div class="contact-wrapper">
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h2>Leave ME Your Info</h2>
+        <form>
+          <label>Your Full Name ( Required )</label>
+          <input type="text" required />
+          <label>Your Email ( Required )</label>
+          <input type="email" required />
+          <label>Subject</label>
+          <input type="text" />
+          <label>Your Message</label>
+          <textarea rows="6"></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h2>Contact Information</h2>
+  
+        <!-- Location Info -->
+        <div class="info-box">
+          <div class="icon-circle"><img src="icon1.png" alt=""></div>
+          <div class="info-content">
+            <div><span class="label">Country:</span><span class="value">Bangladesh</span></div>
+            <div><span class="label">City:</span><span class="value">Dhaka</span></div>
+            <div><span class="label">Streat:</span><span class="value">35 Vhatara, Badda</span></div>
+          </div>
+        </div>
+  
+        <!-- Email/Chat Info -->
+        <div class="info-box">
+          <div class="icon-circle"><img src="icon2.png" alt=""></div>
+          <div class="info-content">
+            <div><span class="label">Email:</span><span class="value">Youremail@Gmail.Com</span></div>
+            <div><span class="label">Skype:</span><span class="value">@Yourusername</span></div>
+            <div><span class="label">Telegram:</span><span class="value">@Yourusername</span></div>
+          </div>
+        </div>
+  
+        <!-- Support Info -->
+        <div class="info-box">
+          <div class="icon-circle"><img src="icon3.png" alt=""></div>
+          <div class="info-content">
+            <div><span class="label">Support Services:</span><span class="value">15369</span></div>
+            <div><span class="label">Office:</span><span class="value">+58 (021)356 587 235</span></div>
+            <div><span class="label">Personal:</span><span class="value">+58 (021)356 587 235</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- Contacts-->
+
+    <!-- Add this below your contact section html Copy Edit -->
+    <section class="brand-logos">
+        <div class="logo-container">
+          <img src="logo1.png" alt="Brand 1" />
+          <img src="logo2.png" alt="Brand 2" />
+          <img src="logo3.png" alt="Brand 3" />
+          <img src="logo4.png" alt="Brand 4" />
+        </div>
+      </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+          <!-- Left Column: Logo + Ratings -->
+          <div class="footer-left">
+            <img src="logo.png" alt="Logo" class="footer-logo" />
+            <div class="rating">
+              <div class="rating-item">
+                <img src="rating1.jpg" alt="Rating 1" />
+                <p>4.5/5 Rating On Lorem</p>
+              </div>
+              <div class="rating-item">
+                <img src="rating2.jpg" alt="Rating 2" />
+                <p>9/10 Rating On Ipsum</p>
+              </div>
+              <div class="rating-item">
+                <img src="rating3.jpg" alt="Rating 3" />
+                <p>4.5/5 Rating On Dorel</p>
+              </div>
+            </div>
+            
+
+          </div>
+      
+          <!-- Right Side: Aligned Below Ratings -->
+          <div class="footer-right">
+            <div class="footer-column">
+              <h4>Quick Links</h4>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Recommendations</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-column">
+              <h4>Portfolio</h4>
+              <ul>
+                <li><a href="#">Frontend Development</a></li>
+                <li><a href="#">Backend Development</a></li>
+                <li><a href="#">Website Design</a></li>
+                <li><a href="#">Machine Learning</a></li>
+                <li><a href="#">Problem Solving & DSA</a></li>
+              </ul>
+            </div>
+      
+            <div class="footer-column footer-social">
+              <h4>Connect</h4>
+              <ul>
+                <li><img src="linkedin-2013.svg" alt="LinkedIn" height="115px"/> </li>
+                <li><img src="Instagram.png" alt="Instagram" /> </li>
+                <li><img src="facebook.svg" alt="Facebook" /> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>© 2024 Copyright, All Right Reserved</p>
+        </div>
+      </footer>
+      
+      
+
+      
+  
+
+  
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
